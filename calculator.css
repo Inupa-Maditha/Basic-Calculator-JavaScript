@@ -100,6 +100,15 @@ h1 {
     width: 20%;
     margin: 0;
     padding: 0;
+    border: 2px solid;
+    border-radius: 8px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+#forInputNumber:active {
+    border-color: rgba(0, 0, 0, 1);
 }
 
 #operatorsContainer {
