@@ -103,11 +103,13 @@ function equal() {
         displayOperation();
     }
 
+    console.log('Final Array : ' + operationArray);
+
     for (let i = 0; i < operationArray.length; i += 2) {
 
         if (operationArray[i] == sum) {
 
-            if (operationArray[i + 2] == sum || operationArray[i + 2] == sub) {
+            if (operationArray[i + 2] != mul && operationArray[i + 2] != div) {
                 total += Number(operationArray[i + 1]);
 
             } else if (operationArray[i + 2] == mul || operationArray[i + 2] == div) {
@@ -125,7 +127,7 @@ function equal() {
 
         } else if (operationArray[i] == sub) {
 
-            if (operationArray[i + 2] == sum || operationArray[i + 2] == sub) {
+            if (operationArray[i + 2] != mul && operationArray[i + 2] != div) {
                 total -= Number(operationArray[i + 1]);
 
             } else if (operationArray[i + 2] == mul || operationArray[i + 2] == div) {
