@@ -119,7 +119,12 @@ function equal() {
                     if (operationArray[j] == mul) {
                         subtotal *= Number(operationArray[j + 1]);
                     } else if (operationArray[j] == div) {
-                        subtotal /= Number(operationArray[j + 1]);
+                        if (operationArray[j + 1] == 0) {
+                            answer.innerText = "Can't divide by zero";
+                            return;
+                        } else {
+                            subtotal /= Number(operationArray[j + 1]);
+                        }
                     }
                 }
                 total += subtotal;
@@ -137,7 +142,12 @@ function equal() {
                     if (operationArray[j] == mul) {
                         subtotal *= Number(operationArray[j + 1]);
                     } else if (operationArray[j] == div) {
-                        subtotal /= Number(operationArray[j + 1]);
+                        if (operationArray[j + 1] == 0) {
+                            answer.innerText = "Can't divide by zero";
+                            return;
+                        } else {
+                            subtotal /= Number(operationArray[j + 1]);
+                        }
                     }
                 }
                 total -= subtotal;
