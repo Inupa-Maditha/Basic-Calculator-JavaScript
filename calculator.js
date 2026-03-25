@@ -39,7 +39,7 @@ function getUserInputNumber() {
 
     let value = document.getElementById("numberField").value;
 
-    if (!value == '') {
+    if (!(value == '')) {
 
         isClickedOperator = false;
 
@@ -87,7 +87,7 @@ function clearInputs() {
     arrayIndex = 0;
     operationArray.length = 0;
     isClickedOperator = false;
-    isSubmitNumber = true;
+    isSubmitNumber = false;
     answer.innerText = '';
 
     displayOperation();
@@ -98,7 +98,7 @@ function equal() {
     total = 0;
     subtotal = '';
 
-    if (operationArray.length % 2 != 0) {
+    if (!(operationArray.length % 2 == 0)) {
         operationArray.length--;
         displayOperation();
     }
