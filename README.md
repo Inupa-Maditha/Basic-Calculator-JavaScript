@@ -22,4 +22,4 @@ A simple calculator built using HTML, CSS, and JavaScript.
 
 ## Author
 
-Your Name — [GitHub](https://github.com/Inupa-Maditha)
+Inupa Maditha — [GitHub](https://github.com/Inupa-Maditha)
