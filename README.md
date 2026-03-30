@@ -18,7 +18,7 @@ A simple calculator built using HTML, CSS, and JavaScript.
 
 ## Example
 
-* `5 + 3 × 2 = 11` (not 16 — multiplication is evaluated before addition)
+* `5 + 3 × 2 = 11` (Not 16, multiplication is evaluated before addition)
 
 ## Author
 
